@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:securityTest id="6418e40c-d304-4c1f-9499-85331350b257" testCaseId="36c48ff7-e182-4730-bced-300d4b30682c" name="SecurityTest 1" failSecurityTestOnScanErrors="true" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6418e40c-d304-4c1f-9499-85331350b257fileName">SecurityTest-1</con:setting>
+  </con:settings>
+  <con:testStepSecurityTest>
+    <con:testStepId>0b81e6b7-5b39-4a75-b310-75f332cb3280</con:testStepId>
+    <con:testStepSecurityScan type="GroovySecurityScan" name="Custom Script" id="726a3f33-3498-4fd4-9db5-28c7d0f4da45" applyForFailedStep="false" disabled="false">
+      <con:settings/>
+      <con:config xsi:type="con:GroovySecurityScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <con:executeScript>log.info "qwe"</con:executeScript>
+      </con:config>
+      <con:assertion type="Sensitive Information Exposure" id="22ce2e8f-845b-4e8c-beb2-b3982a849188" name="Sensitive Information Exposure">
+        <con:configuration/>
+      </con:assertion>
+      <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <con:checkedParameters xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <con:parameters label="x" parameterName="Request" xpath="declare namespace ser='http://localhost/test_service/Service1.asmx';
+//ser:Con_Stroka[1]/ser:x[1]" checked="true"/>
+        <con:parameters label="y" parameterName="Request" xpath="declare namespace ser='http://localhost/test_service/Service1.asmx';
+//ser:Con_Stroka[1]/ser:y[1]" checked="true"/>
+      </con:checkedParameters>
+      <con:executionStrategy xsi:nil="true" immutable="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <con:strategy>ONE_BY_ONE</con:strategy>
+        <con:delay>100</con:delay>
+      </con:executionStrategy>
+    </con:testStepSecurityScan>
+  </con:testStepSecurityTest>
+  <con:properties/>
+  <con:reportParameters/>
+</con:securityTest>
