@@ -47,7 +47,7 @@
           <con:configuration>
             <path>declare namespace ns1='http://localhost/test_service/Service1.asmx';
 //ns1:Con_StrokaResponse[1]/ns1:Con_StrokaResult[1]</path>
-            <content>qwe asd</content>
+            <content>456 asd</content>
             <allowWildcards>false</allowWildcards>
             <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
             <ignoreComments>false</ignoreComments>
@@ -59,7 +59,7 @@
   <con:testStep type="groovy" name="Groovy Script" id="33f6a16c-c1c3-4f20-b13c-0663ff1f0697">
     <con:settings/>
     <con:config>
-      <script>log.info "asd"</script>
+      <script>log.info "456"</script>
     </con:config>
   </con:testStep>
   <con:testStep type="datasource" name="DataSource" id="a57d7cac-72a6-4c6d-9710-6be4de5ba26f">
@@ -68,7 +68,7 @@
       <con:dataSource type="Grid">
         <con:configuration>
           <check>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">true&lt;/con:entry></check>
-          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">qwe&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">456&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
           <recognizeAsPlainText>true</recognizeAsPlainText>
         </con:configuration>
       </con:dataSource>
