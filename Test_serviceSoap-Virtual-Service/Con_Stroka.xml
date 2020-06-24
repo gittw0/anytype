@@ -11,7 +11,7 @@
       <con:type>JSONPath</con:type>
       <con:query>declare namespace ser='http://localhost/test_service/Service1.asmx';
 //ser:Con_Stroka[1]/ser:x[1]</con:query>
-      <con:match>qwe</con:match>
+      <con:match>456</con:match>
       <con:response>Response 1</con:response>
     </con:query>
   </con:dispatchConfig>
